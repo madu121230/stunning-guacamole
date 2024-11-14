@@ -138,9 +138,9 @@
                     <img src="graphic design.png">
                     <div class="layer">
                         <h3>Graphic Design </h3>
-                        <p>Excited to share my latest project!Built a responsive portfolio grid using CSS Grid, making
-                            it super clean and dynamic.
-                            Perfect for showcasing work on any screen size!Stay tuned for more updates. </p>
+                        <p>Graphic designers create images and layouts for some of the following: Company brand identity
+                            (logos, typography, and colour palettes) User interfaces on apps and websites. Books,
+                            magazines, newspapers, and other publications. Product packaging</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -148,11 +148,12 @@
                     <img src="web developer.jpg">
                     <div class="layer">
                         <h3>web developer</h3>
-                        <p>As a Western music teacher, my work involves nurturing students' musical abilities and
-                            helping them explore the art of music. I focus on teaching music theory, guiding instrument
-                            practice, and developing vocal techniques. My services include designing lesson plans
-                            tailored to individual needs, preparing students for performances or exams, and inspiring a
-                            love for music.</p>
+                        <p>A web developer is a programmer who develops World Wide Web applications using a
+                            client–server model. The applications typically use HTML, CSS, and JavaScript in the client,
+                            and any general-purpose programming language in the server. HTTP is used for communications
+                            between client and server. A web developer may specialize in client-side applications
+                            (Front-end web development), server-side applications (back-end development), or both
+                            (full-stack development).</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
 
@@ -190,7 +191,7 @@
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
                         </div>
-                        <a href="images/Dineth_CV_Template.pdf" download class="btn btn2">Download CV</a>
+                        <a href="my cv copy.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
                         <form class="submit-to-google-sheet">
@@ -207,7 +208,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>copyright@dineth.my personal<i class="fa-solid fa-heart"></i> information</p>
+                <p>copyright@madusanka.my personal<i class="fa-solid fa-heart"></i> information</p>
             </div>
         </div>
 
@@ -229,24 +230,21 @@
 
         </script>
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbz-MvYTm0Xjst6LM88YjVdOktllBIddjgg4-mxNKfhF_gaBw0cgrCOwRikPP2xuPxKRsQ/exec '
+            const scriptURL = '<https://script.google.com/macros/s/AKfycbzK80YJmZfBfbWj6WkxV4AWcNrMZC2Zb6WyiUBiBfWUNKzdM4SXrXxxhjQE4vrw8HVO/exec>'
             const form = document.forms['submit-to-google-sheet']
-            constmsg = document.getElementById('msg')
 
             form.addEventListener('submit', e => {
                 e.preventDefault()
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                     .then(response => {
-                        msg.innerHTML = 'Message sent successfily'
+                        msg.innerHTML = "message sent successfully"
                         setTimeout(function () {
-                            msg.innerHTML = ''
+                            msg.innerHTML = ""
                         }, 5000)
-                        form.reset()
                     })
                     .catch(error => console.error('Error!', error.message))
             })
         </script>
-
 
 </body>
 
